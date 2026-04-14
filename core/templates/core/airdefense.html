@@ -1,0 +1,121 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}الدفاع الجوي{% endblock %}
+
+{% block content %}
+<section class="page-header fade-in">
+    <h1>الدفاع الجوي</h1>
+    <p>أنظمة حديثة للرصد والمتابعة تعزز سرعة الاستجابة وحماية المناطق الحيوية.</p>
+</section>
+
+<section class="section section-light fade-in">
+    <div class="branch-detail-card reverse-card">
+        <div class="branch-detail-image">
+            <img src="{% static 'images/airdefense.jpg' %}" alt="الدفاع الجوي">
+        </div>
+        <div class="branch-detail-content">
+            <span class="branch-label">الفرع الرابع</span>
+            <h2>الدفاع الجوي</h2>
+            <h4 class="branch-chief">قائد قوات الدفاع الجوي: معالي الفريق الركن : مزيد بن سليمان العمرو</h4>
+            <div class="branch-line"></div>
+            <div class="branch-text-box">
+                <p>تضطلع قوات الدفاع الجوي الملكي السعودي، بمهمة الدفاع عن المناطق الحيوية والنقاط الحساسة والتشكيلات العسكرية ضد أي تهديد جوي وصاروخي، بالاشتراك مع القوات الجوية والمساهمة مع أفرع القوات المسلحة لحماية استقرار وثروات المملكة العربية السعودية.</p>
+                <p>وذلك سعيًا إلى تحقيق رؤيتها في ترسيخ وتكوين قوات دفاع جوي حديثة فاعلة، تحقق سرعة الاستجابة وردة الفعل لتحمي أمن الوطن ومصالحه من التهديد الخارجي، بالاشتراك مع بقية أفرع القوات المسلحة الأخرى.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section reveal-section">
+    <div class="branch-subsection reverse">
+        <div class="branch-subsection-text">
+            <h2>كلية الملك عبدالله للدفاع الجوي</h2>
+            <p>
+                تختص كلية الملك عبدالله للدفاع الجوي بإعداد الضباط وتأهيلهم
+                في مجالات الدفاع الجوي والأنظمة المرتبطة به، بما يدعم الجاهزية،
+                ويرفع كفاءة الكوادر العاملة في حماية الأهداف الحيوية والمجال الجوي.
+            </p>
+            <a href="{% url 'core:home' %}" class="branch-subsection-link">
+                العودة إلى الرئيسية ←
+            </a>
+        </div>
+
+        <div class="branch-subsection-image">
+            <img src="{% static 'images/555.jpg' %}" alt="كلية الملك عبدالله للدفاع الجوي">
+        </div>
+    </div>
+</section>
+<section class="section branch-news-section reveal-section">
+    <h2 class="branch-news-heading">أخبار قوات الدفاع الجوي</h2>
+
+    <div class="branch-news-ticker">
+        <div class="branch-news-track">
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الخميس - 1447/07/19</span>
+                <span class="branch-news-source">قوات الدفاع الجوي الملكي السعودي</span>
+                <p class="branch-news-text">
+                    قوات الدفاع الجوي تخرج السرية الرابعة لمنظومة متقدمة في قاعدة تدريب متخصصة.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الثلاثاء - 1446/10/10</span>
+                <span class="branch-news-source">قوات الدفاع الجوي الملكي السعودي</span>
+                <p class="branch-news-text">
+                    قوات الدفاع الجوي تخرج الدفعة الثانية لمنظومة دفاعية ضمن برنامج تدريبي متقدم.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الأربعاء - 1446/10/18</span>
+                <span class="branch-news-source">قوات الدفاع الجوي الملكي السعودي</span>
+                <p class="branch-news-text">
+                    نيابة عن سمو وزير الدفاع، سمو نائب وزير الدفاع يرعى حفل تخريج إحدى الدفعات.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الأحد - 1447/07/07</span>
+                <span class="branch-news-source">قوات الدفاع الجوي الملكي السعودي</span>
+                <p class="branch-news-text">
+                    تدشين منظومة جديدة ضمن جهود رفع الجاهزية والكفاءة التشغيلية.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الخميس - 1447/07/19</span>
+                <span class="branch-news-source">قوات الدفاع الجوي الملكي السعودي</span>
+                <p class="branch-news-text">
+                    قوات الدفاع الجوي تخرج السرية الرابعة لمنظومة متقدمة في قاعدة تدريب متخصصة.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الثلاثاء - 1446/10/10</span>
+                <span class="branch-news-source">قوات الدفاع الجوي الملكي السعودي</span>
+                <p class="branch-news-text">
+                    قوات الدفاع الجوي تخرج الدفعة الثانية لمنظومة دفاعية ضمن برنامج تدريبي متقدم.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الأربعاء - 1446/10/18</span>
+                <span class="branch-news-source">قوات الدفاع الجوي الملكي السعودي</span>
+                <p class="branch-news-text">
+                    نيابة عن سمو وزير الدفاع، سمو نائب وزير الدفاع يرعى حفل تخريج إحدى الدفعات.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الأحد - 1447/07/07</span>
+                <span class="branch-news-source">قوات الدفاع الجوي الملكي السعودي</span>
+                <p class="branch-news-text">
+                    تدشين منظومة جديدة ضمن جهود رفع الجاهزية والكفاءة التشغيلية.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,122 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}القوات البرية{% endblock %}
+
+{% block content %}
+<section class="page-header fade-in">
+    <h1>القوات البرية</h1>
+    <p>الجاهزية الميدانية وحماية الحدود ضمن منظومة دفاعية متكاملة.</p>
+</section>
+
+<section class="section section-white fade-in">
+    <div class="branch-detail-card">
+        <div class="branch-detail-image">
+            <img src="{% static 'images/army.jpg' %}" alt="القوات البرية">
+        </div>
+        <div class="branch-detail-content">
+            <span class="branch-label">الفرع الأول</span>
+            <h2>القوات البرية</h2>
+            <h4 class="branch-chief">رئيس اركان القوات البرية: معالي الفريق الركن فهد بن سعود الجهني</h4>
+            <div class="branch-line"></div>
+            <div class="branch-text">
+                <p>.تُعد القوات البرية الملكية السعودية أول قوة عسكرية نظامية سعودية، وتُعنى بحماية أمن الوطن ومصالحه من التهديد الخارجي، والتنسيق المتكامل مع عناصر القوى الوطنية لتعزيز الأمن الوطني، بالإضافة إلى تحقيق الاستخدام الأمثل للموارد من خلال بيئة عمل قائمة على الجدارة.</p>
+                <p>وتتوزع القوات البرية على ثماني مناطق عسكرية تغطي كافة النطاق الجغرافي للمملكة العربية السعودية، وتتكون من عدة قيادات مناطق، وأسلحة مستقلة، وكليات، ومعاهد، ومدارس متقدمة، وتشكيلات، وإدارات، وهيئات، ومجموعات مختلفة. </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section reveal-section">
+    <div class="branch-subsection">
+        <div class="branch-subsection-text">
+            <h2>كلية الملك عبدالعزيز الحربية</h2>
+            <p>
+                تُعد كلية الملك عبدالعزيز الحربية من أبرز المؤسسات التعليمية العسكرية في المملكة،
+                وتهدف إلى تأهيل وإعداد الضباط من خلال برامج أكاديمية وعسكرية متخصصة،
+                بما يسهم في دعم جاهزية القوات البرية ورفع كفاءة كوادرها.
+            </p>
+            <a href="{% url 'core:air' %}" class="branch-subsection-link">
+                الانتقال إلى القوات الجوية ←
+            </a>
+        </div>
+
+        <div class="branch-subsection-image">
+            <img src="{% static 'images/2222.jpg' %}" alt="كلية الملك عبدالعزيز الحربية">
+        </div>
+    </div>
+</section>
+<section class="section branch-news-section reveal-section">
+    <h2 class="branch-news-heading">أخبار القوات البرية</h2>
+
+    <div class="branch-news-ticker">
+        <div class="branch-news-track">
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الأحد - 1446/10/22</span>
+                <span class="branch-news-source">القوات البرية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    القوات البرية تحصد الذهبية والبرونزية في المسابقة الدولية لروح الفريق في باكستان.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الثلاثاء - 1446/10/24</span>
+                <span class="branch-news-source">القوات البرية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    رئيس أركان القوات البرية يدشن ملتقى الاتصالات وتقنية المعلومات.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الأربعاء - 1446/11/02</span>
+                <span class="branch-news-source">القوات البرية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    نيابة عن سمو وزير الدفاع، سمو نائب وزير الدفاع يرعى حفل تخريج الدفعة (83).
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الأربعاء - 1446/11/09</span>
+                <span class="branch-news-source">القوات البرية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    رئيس أركان القوات البرية يطلع على أحدث التقنيات الدفاعية في معرض دولي.
+                </p>
+            </div>
+
+            <!-- تكرار نفس البطاقات للحركة المستمرة -->
+            <div class="branch-news-card">
+                <span class="branch-news-date">الأحد - 1446/10/22</span>
+                <span class="branch-news-source">القوات البرية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    القوات البرية تحصد الذهبية والبرونزية في المسابقة الدولية لروح الفريق في باكستان.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الثلاثاء - 1446/10/24</span>
+                <span class="branch-news-source">القوات البرية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    رئيس أركان القوات البرية يدشن ملتقى الاتصالات وتقنية المعلومات.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الأربعاء - 1446/11/02</span>
+                <span class="branch-news-source">القوات البرية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    نيابة عن سمو وزير الدفاع، سمو نائب وزير الدفاع يرعى حفل تخريج الدفعة (83).
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الأربعاء - 1446/11/09</span>
+                <span class="branch-news-source">القوات البرية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    رئيس أركان القوات البرية يطلع على أحدث التقنيات الدفاعية في معرض دولي.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

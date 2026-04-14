@@ -1,0 +1,121 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}القوات البحرية{% endblock %}
+
+{% block content %}
+<section class="page-header fade-in">
+    <h1>القوات البحرية</h1>
+    <p>حماية السواحل والممرات البحرية والمصالح الوطنية المرتبطة بالأمن البحري.</p>
+</section>
+
+<section class="section section-white fade-in">
+    <div class="branch-detail-card">
+        <div class="branch-detail-image">
+            <img src="{% static 'images/Royal.jpg' %}" alt="القوات البحرية">
+        </div>
+        <div class="branch-detail-content">
+            <span class="branch-label">الفرع الثالث</span>
+            <h2>القوات البحرية</h2>
+            <h4 class="branch-chief">رئيس أركان القوات البحرية: معالي الفريق الركن محمد بن عبدالرحمن الغريبي</h4>
+            <div class="branch-line"></div>
+            <div class="branch-text-box">
+                <p>تتولى القوات البحرية الملكية السعودية، مهمة الدفاع عن أمن وسلامة أراضي المملكة العربية السعودية وبحارها الإقليمية</p>
+                <p> وتمتلك القوات البحرية أسطولين مهمين هما الأسطول الشرقي على الخليج العربي والأسطول الغربي على البحر الأحمر، ويمتلك كل منهما قوة عسكرية تتمثل في وحدات السفن القتالية ووحدات الدعم والإسناد الإداري والفني ومجموعة الطيران البحري ومشاة البحرية ووحدات الأمن البحرية الخاص</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section reveal-section">
+    <div class="branch-subsection">
+        <div class="branch-subsection-text">
+            <h2>كلية الملك فهد البحرية</h2>
+            <p>
+                تعمل كلية الملك فهد البحرية على إعداد وتأهيل الضباط للعمل في المجال البحري،
+                من خلال برامج تدريبية وتعليمية متخصصة تدعم حماية السواحل
+                والممرات البحرية وتعزز كفاءة الكوادر في القوات البحرية.
+            </p>
+            <a href="{% url 'core:airdefense' %}" class="branch-subsection-link">
+                الانتقال إلى الدفاع الجوي ←
+            </a>
+        </div>
+
+        <div class="branch-subsection-image">
+            <img src="{% static 'images/444.jpg' %}" alt="كلية الملك فهد البحرية">
+        </div>
+    </div>
+</section>
+<section class="section branch-news-section reveal-section">
+    <h2 class="branch-news-heading">أخبار القوات البحرية</h2>
+
+    <div class="branch-news-ticker">
+        <div class="branch-news-track">
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الخميس - 1447/05/29</span>
+                <span class="branch-news-source">القوات البحرية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    انطلاق مناورات «الموج الأحمر 8» بمشاركة القوات البحرية في البحر الأحمر.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الثلاثاء - 1447/06/25</span>
+                <span class="branch-news-source">القوات البحرية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    القوات البحرية تقيم فعالية بحرية ضمن برنامج تعاون مشترك مع جهات دولية.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الخميس - 1447/07/05</span>
+                <span class="branch-news-source">القوات البحرية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    معهد الدراسات الفنية البحرية يحتفل بتخريج إحدى الدفعات.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الأحد - 1447/07/06</span>
+                <span class="branch-news-source">القوات البحرية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    تمرين السلام 2026 بمشاركة القوات البحرية ضمن بيئة عمليات مشتركة.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الخميس - 1447/05/29</span>
+                <span class="branch-news-source">القوات البحرية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    انطلاق مناورات «الموج الأحمر 8» بمشاركة القوات البحرية في البحر الأحمر.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الثلاثاء - 1447/06/25</span>
+                <span class="branch-news-source">القوات البحرية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    القوات البحرية تقيم فعالية بحرية ضمن برنامج تعاون مشترك مع جهات دولية.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الخميس - 1447/07/05</span>
+                <span class="branch-news-source">القوات البحرية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    معهد الدراسات الفنية البحرية يحتفل بتخريج إحدى الدفعات.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الأحد - 1447/07/06</span>
+                <span class="branch-news-source">القوات البحرية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    تمرين السلام 2026 بمشاركة القوات البحرية ضمن بيئة عمليات مشتركة.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

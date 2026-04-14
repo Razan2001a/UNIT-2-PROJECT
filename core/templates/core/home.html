@@ -1,0 +1,247 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}الرئيسية{% endblock %}
+
+{% block content %}
+
+<!-- Hero -->
+<section class="hero-video-section">
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="{% static 'videos/defense.mp4' %}" type="video/mp4">
+    </video>
+
+    <div class="overlay">
+        <h1>نحمي الوطن... ونبني المستقبل</h1>
+
+        <p>
+            منظومة دفاعية متكاملة تجمع بين الجاهزية والتقنية والتنسيق，
+            من أجل حماية المملكة وتعزيز أمنها واستقرارها.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="{% url 'core:sectors' %}" class="btn">استكشف الأفرع</a>
+            <a href="{% url 'core:vision' %}" class="btn btn-outline">الرؤية والمهمة</a>
+        </div>
+    </div>
+</section>
+<div class="home-news-ticker">
+    <div class="home-news-track">
+        <div class="home-news-content">
+            <span>عاجل</span>
+            <span>تطوير مستمر في المنظومة الدفاعية</span>
+            <span>دعم الأمن السيبراني والذكاء الاصطناعي</span>
+            <span>رفع الجاهزية والكفاءة التشغيلية</span>
+            <span>رؤية المملكة 2030 نحو مستقبل أقوى</span>
+        </div>
+
+        <div class="home-news-content">
+            <span>عاجل</span>
+            <span>تطوير مستمر في المنظومة الدفاعية</span>
+            <span>دعم الأمن السيبراني والذكاء الاصطناعي</span>
+            <span>رفع الجاهزية والكفاءة التشغيلية</span>
+            <span>رؤية المملكة 2030 نحو مستقبل أقوى</span>
+        </div>
+    </div>
+</div>
+<!-- القيادة -->
+<section class="section section-light fade-in-section">
+    <div class="two-column">
+
+        <div>
+            <h2>كلمة عن القيادة</h2>
+
+            <p>
+                في ظل قيادة سمو ولي العهد الأمير محمد بن سلمان، شهدت المملكة العربية السعودية
+                تطورًا واسعًا في مختلف القطاعات الحيوية، ومن أبرزها قطاع الدفاع والأمن الوطني،
+                من خلال التركيز على رفع الجاهزية، وتعزيز الكفاءة، ودعم الابتكار،
+                وبناء قدرات وطنية حديثة.
+            </p>
+        </div>
+
+        <div>
+            <img src="{% static 'images/mbiss.jpg' %}" alt="محمد بن سلمان" class="page-image">
+        </div>
+
+    </div>
+</section>
+
+<!-- المنظومة -->
+<section class="section defense-section reveal-section">
+    <div class="defense-intro-box">
+        <h2 class="section-title defense-title">عن المنظومة الدفاعية</h2>
+
+        <div class="defense-line"></div>
+
+        <p class="section-text defense-text">
+            تمثل المنظومة الدفاعية في المملكة العربية السعودية إطارًا متكاملًا يقوم على
+            التنسيق بين أفرع القوات المسلحة، والاستفادة من التقنيات الحديثة، ورفع كفاءة
+            الأداء والجاهزية، بهدف حماية الوطن وتعزيز الأمن والاستقرار الوطني.
+        </p>
+
+        <p class="section-text defense-text">
+            كما ترتبط هذه المنظومة بعناصر مهمة تشمل الأمن السيبراني، والذكاء الاصطناعي،
+            والتطوير المستمر للأنظمة، بما يعكس توجهًا حديثًا نحو بناء دفاع أكثر مرونة
+            واستعدادًا وقدرة على التكيف مع المتغيرات المستقبلية.
+        </p>
+
+    </div>
+</section>
+
+<!-- الأفرع -->
+<section class="section section-light fade-in-section">
+
+    <h2 class="section-title">أفرع القوات المسلحة</h2>
+
+    <div class="branches-grid">
+
+        <!-- البرية -->
+        <a href="{% url 'core:land' %}" class="branch-card">
+            <img src="{% static 'images/army.jpg' %}" class="branch-image">
+
+            <div class="branch-overlay">
+                <h3>القوات البرية</h3>
+
+                <p>
+                    حماية الحدود ورفع الجاهزية الميدانية وتعزيز القدرة
+                    على التعامل مع التحديات.
+                </p>
+
+                <span class="read-more-arrow">← قراءة المزيد</span>
+            </div>
+        </a>
+
+        <!-- الجوية -->
+        <a href="{% url 'core:air' %}" class="branch-card">
+            <img src="{% static 'images/air.jpg' %}" class="branch-image">
+
+            <div class="branch-overlay">
+                <h3>القوات الجوية</h3>
+
+                <p>
+                    حماية الأجواء ودعم العمليات الدفاعية
+                    بسرعة ومرونة وكفاءة عالية.
+                </p>
+
+                <span class="read-more-arrow">← قراءة المزيد</span>
+            </div>
+        </a>
+
+        <!-- البحرية -->
+        <a href="{% url 'core:navy' %}" class="branch-card">
+            <img src="{% static 'images/Royal.jpg' %}" class="branch-image">
+
+            <div class="branch-overlay">
+                <h3>القوات البحرية</h3>
+
+                <p>
+                    حماية السواحل والممرات البحرية
+                    والمصالح الوطنية.
+                </p>
+
+                <span class="read-more-arrow">← قراءة المزيد</span>
+            </div>
+        </a>
+
+        <!-- الدفاع الجوي -->
+        <a href="{% url 'core:airdefense' %}" class="branch-card">
+            <img src="{% static 'images/airdefense.jpg' %}" class="branch-image">
+
+            <div class="branch-overlay">
+                <h3>الدفاع الجوي</h3>
+
+                <p>
+                    أنظمة رصد ومتابعة متقدمة للكشف المبكر
+                    ورفع سرعة الاستجابة.
+                </p>
+
+                <span class="read-more-arrow">← قراءة المزيد</span>
+            </div>
+        </a>
+
+    </div>
+
+</section>
+
+<section class="section section-white fade-in-section">
+
+<h2 class="section-title">أقسام المشروع</h2>
+
+<div class="branches-grid">
+
+    <a href="{% url 'core:cyber' %}" class="branch-card">
+        <img src="{% static 'images/cyber.jpg' %}" class="branch-image">
+        <div class="branch-overlay">
+            <h3>الأمن السيبراني</h3>
+            <p>حماية الأنظمة والشبكات والبنية الرقمية الحديثة.</p>
+            <span class="read-more-arrow">← قراءة المزيد</span>
+        </div>
+    </a>
+
+    <a href="{% url 'core:ai' %}" class="branch-card">
+        <img src="{% static 'images/ai.jpg' %}" class="branch-image">
+        <div class="branch-overlay">
+            <h3>الذكاء الاصطناعي</h3>
+            <p>أنظمة ذكية تدعم التحليل واتخاذ القرار ورفع الكفاءة.</p>
+            <span class="read-more-arrow">← قراءة المزيد</span>
+        </div>
+    </a>
+
+    <a href="{% url 'core:vision' %}" class="branch-card">
+        <img src="{% static 'images/mibs3.jpg' %}" class="branch-image">
+        <div class="branch-overlay">
+            <h3>الرؤية والمهمة</h3>
+            <p>الأهداف والرؤية الاستراتيجية لبناء مستقبل أقوى.</p>
+            <span class="read-more-arrow">← قراءة المزيد</span>
+        </div>
+    </a>
+
+    <a href="{% url 'core:future' %}" class="branch-card">
+        <img src="{% static 'images/future.jpg' %}" class="branch-image">
+        <div class="branch-overlay">
+            <h3>مستقبل الدفاع</h3>
+            <p>التقنية والتكامل والأنظمة الحديثة للمستقبل.</p>
+            <span class="read-more-arrow">← قراءة المزيد</span>
+        </div>
+    </a>
+
+ <a href="{% url 'core:history' %}" class="branch-card">
+        <img src="{% static 'images/history.jpg' %}" class="branch-image">
+        <div class="branch-overlay">
+            <h3>تاريخ الوزارة</h3>
+            <p> نبذة عن تطور وزارة الدفاع ومسيرتها في بناء منظومة وطنية حديثة</p>
+            <span class="read-more-arrow">← قراءة المزيد</span>
+        </div>
+    </a>
+
+</div>
+
+</section>
+
+<section class="section fade-in-section">
+
+<div class="triple-video-grid">
+
+    <div class="video-box">
+        <video autoplay muted loop playsinline class="small-video">
+            <source src="{% static 'videos/rmm.mp4' %}" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="video-box">
+        <video autoplay muted loop playsinline class="small-video">
+            <source src="{% static 'videos/raza.mp4' %}" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="video-box">
+        <video autoplay muted loop playsinline class="small-video">
+            <source src="{% static 'videos/mmm.mp4' %}" type="video/mp4">
+        </video>
+    </div>
+
+</div>
+
+</section>
+
+{% endblock %}

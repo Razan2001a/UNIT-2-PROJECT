@@ -1,0 +1,121 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}القوات الجوية{% endblock %}
+
+{% block content %}
+<section class="page-header fade-in">
+    <h1>القوات الجوية</h1>
+    <p>حماية الأجواء ودعم العمليات الدفاعية بمرونة وكفاءة عالية.</p>
+</section>
+
+<section class="section section-light fade-in">
+    <div class="branch-detail-card reverse-card">
+        <div class="branch-detail-image">
+            <img src="{% static 'images/air.jpg' %}" alt="القوات الجوية">
+        </div>
+        <div class="branch-detail-content">
+            <span class="branch-label">الفرع الثاني</span>
+            <h2>القوات الجوية</h2>
+            <h4 class="branch-chief">قائد القوات الجوية: سمو الفريق الركن تركي بن بندر بن عبدالعزيز</h4>
+            <div class="branch-line"></div>
+            <div class="branch-text-box">
+                <p> تنهض القوات الجوية الملكية السعودية، بمهام الدفاع عن أمن وسلامة أجواء المملكة العربية السعودية، وحمايتها من أي اعتداء، والمساهمة مع أفرع القوات المسلحة الأخرى في توطيد حرية واستقرار ثروات المملكة، وذلك من خلال امتلاكها أفضل المقاتلات الجوية في العالم، مرتكزة في ذلك على رؤيتها في أن تكون قوة جوية يقظة قادرة ومؤثرة</p>
+                <p>هدف إلى المحافظة على الأمن، ورفع الروح المعنوية، وتعزيز الجاهزية القتالية والبدنية والإدارية والنفسية، وترسيخ مفهوم العمل المشترك.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section reveal-section">
+    <div class="branch-subsection reverse">
+        <div class="branch-subsection-text">
+            <h2>كلية الملك فيصل الجوية</h2>
+            <p>
+                تُعنى كلية الملك فيصل الجوية بإعداد وتأهيل الضباط للعمل في القوات الجوية،
+                من خلال تدريب أكاديمي وعسكري متكامل يسهم في بناء كوادر مؤهلة
+                قادرة على دعم أمن الأجواء ورفع الجاهزية التشغيلية.
+            </p>
+            <a href="{% url 'core:navy' %}" class="branch-subsection-link">
+                الانتقال إلى القوات البحرية ←
+            </a>
+        </div>
+
+        <div class="branch-subsection-image">
+            <img src="{% static 'images/333.jpg' %}" alt="كلية الملك فيصل الجوية">
+        </div>
+    </div>
+</section>
+<section class="section branch-news-section reveal-section">
+    <h2 class="branch-news-heading">أخبار القوات الجوية</h2>
+
+    <div class="branch-news-ticker">
+        <div class="branch-news-track">
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الثلاثاء - 1447/08/01</span>
+                <span class="branch-news-source">القوات الجوية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    مناورات تمرين «رماح النصر 2026» تنطلق في مركز الحرب الجوي بالقطاع الشرقي.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الأربعاء - 1447/08/02</span>
+                <span class="branch-news-source">القوات الجوية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    سمو قائد القوات الجوية يقف على سير مناورات تمرين «رماح النصر 2026».
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الخميس - 1447/08/14</span>
+                <span class="branch-news-source">القوات الجوية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    سمو قائد القوات الجوية يزور جمهورية كوريا ويلتقي عددًا من المسؤولين.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الأحد - 1447/08/16</span>
+                <span class="branch-news-source">القوات الجوية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    برنامج النسر 2026 ضمن المبادرات التدريبية الداعمة لرفع الجاهزية الجوية.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الثلاثاء - 1447/08/01</span>
+                <span class="branch-news-source">القوات الجوية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    مناورات تمرين «رماح النصر 2026» تنطلق في مركز الحرب الجوي بالقطاع الشرقي.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الأربعاء - 1447/08/02</span>
+                <span class="branch-news-source">القوات الجوية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    سمو قائد القوات الجوية يقف على سير مناورات تمرين «رماح النصر 2026».
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الخميس - 1447/08/14</span>
+                <span class="branch-news-source">القوات الجوية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    سمو قائد القوات الجوية يزور جمهورية كوريا ويلتقي عددًا من المسؤولين.
+                </p>
+            </div>
+
+            <div class="branch-news-card">
+                <span class="branch-news-date">الأحد - 1447/08/16</span>
+                <span class="branch-news-source">القوات الجوية الملكية السعودية</span>
+                <p class="branch-news-text">
+                    برنامج النسر 2026 ضمن المبادرات التدريبية الداعمة لرفع الجاهزية الجوية.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

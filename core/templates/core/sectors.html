@@ -1,0 +1,133 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}أفرع القوات المسلحة{% endblock %}
+
+{% block content %}
+
+<section class="page-header fade-in">
+    <h1>أفرع القوات المسلحة</h1>
+    <p>
+        تعمل أفرع القوات المسلحة في المملكة ضمن منظومة متكاملة تقوم على الجاهزية،
+        والتنسيق، والتقنيات الحديثة لحماية الوطن وتعزيز أمنه واستقراره.
+    </p>
+</section>
+<section class="section branch-nav-section">
+    <div class="branch-nav">
+        <a href="{% url 'core:land' %}">القوات البرية</a>
+        <a href="{% url 'core:air' %}">القوات الجوية</a>
+        <a href="{% url 'core:navy' %}">القوات البحرية</a>
+        <a href="{% url 'core:airdefense' %}">الدفاع الجوي</a>
+    </div>
+</section>
+
+<section class="section section-white" id="land-section">
+    <div class="branch-detail-card">
+        <div class="branch-detail-image">
+            <img src="{% static 'images/army.jpg' %}" alt="القوات البرية">
+        </div>
+
+        <div class="branch-detail-content">
+            <span class="branch-label">الفرع الأول</span>
+            <h2>القوات البرية</h2>
+            <h4 class="branch-chief">رئيس الفرع: يضاف الاسم هنا</h4>
+            <div class="branch-line"></div>
+
+            <div class="branch-text-box">
+                <p>
+                    تُعد القوات البرية الملكية السعودية أول قوة عسكرية نظامية سعودية،
+                    وتُعنى بحماية أمن الوطن ومصالحه من التهديد الخارجي، والتنسيق المتكامل
+                    مع عناصر القوى الوطنية لتعزيز الأمن الوطني.
+                </p>
+
+                <p>
+                    كما تغطي القوات البرية مختلف مناطق المملكة، وتضم قيادات وأسلحة مستقلة
+                    وكليات ومعاهد ومدارس متقدمة، مما يعكس جاهزية عالية وقدرة تنظيمية متقدمة.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-light" id="air-section">
+    <div class="branch-detail-card reverse-card">
+        <div class="branch-detail-image">
+            <img src="{% static 'images/air.jpg' %}" alt="القوات الجوية">
+        </div>
+
+        <div class="branch-detail-content">
+            <span class="branch-label">الفرع الثاني</span>
+            <h2>القوات الجوية</h2>
+            <h4 class="branch-chief">رئيس الفرع: يضاف الاسم هنا</h4>
+            <div class="branch-line"></div>
+
+            <div class="branch-text-box">
+                <p>
+                    تنهض القوات الجوية الملكية السعودية بمهام الدفاع عن أمن وسلامة أجواء
+                    المملكة العربية السعودية، وحمايتها من أي اعتداء.
+                </p>
+
+                <p>
+                    كما تسهم في رفع سرعة الاستجابة ودعم العمليات المشتركة من خلال
+                    المقاتلات الحديثة والقدرات التشغيلية المتقدمة.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-white" id="navy-section">
+    <div class="branch-detail-card">
+        <div class="branch-detail-image">
+            <img src="{% static 'images/Royal.jpg' %}" alt="القوات البحرية">
+        </div>
+
+        <div class="branch-detail-content">
+            <span class="branch-label">الفرع الثالث</span>
+            <h2>القوات البحرية</h2>
+            <h4 class="branch-chief">رئيس الفرع: يضاف الاسم هنا</h4>
+            <div class="branch-line"></div>
+
+            <div class="branch-text-box">
+                <p>
+                    تتولى القوات البحرية الملكية السعودية مهمة الدفاع عن أمن وسلامة
+                    أراضي المملكة وبحارها الإقليمية.
+                </p>
+
+                <p>
+                    وتمتلك أسطولين مهمين هما الأسطول الشرقي على الخليج العربي والأسطول
+                    الغربي على البحر الأحمر، بما يعزز الأمن البحري والاستقرار الوطني.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-light" id="airdefense-section">
+    <div class="branch-detail-card reverse-card">
+        <div class="branch-detail-image">
+            <img src="{% static 'images/airdefense.jpg' %}" alt="الدفاع الجوي">
+        </div>
+
+        <div class="branch-detail-content">
+            <span class="branch-label">الفرع الرابع</span>
+            <h2>الدفاع الجوي</h2>
+            <h4 class="branch-chief">رئيس الفرع: يضاف الاسم هنا</h4>
+            <div class="branch-line"></div>
+
+            <div class="branch-text-box">
+                <p>
+                    تضطلع قوات الدفاع الجوي الملكي السعودي بمهمة الدفاع عن المناطق الحيوية
+                    والنقاط الحساسة ضد أي تهديد جوي وصاروخي.
+                </p>
+
+                <p>
+                    ويعتمد الدفاع الجوي على أنظمة رصد ومتابعة حديثة تعزز سرعة الاستجابة
+                    وحماية أمن الوطن ومصالحه.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
